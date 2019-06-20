@@ -11,8 +11,7 @@ from queue import Queue
 
 tf.enable_eager_execution()
 
-parser = argparse.ArgumentParser(description='Run A3C algorithm on the game '
-                                             'Cartpole.')
+parser = argparse.ArgumentParser(description='Run A3C algorithm on gym env.')
 parser.add_argument('--algorithm', default='a3c', type=str,
                     help='Choose between \'a3c\' and \'random\'.')
 parser.add_argument('--train', dest='train', action='store_true',
