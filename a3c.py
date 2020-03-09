@@ -54,7 +54,7 @@ class RandomAgent():
     def run(self):
         reward_avg = 0
         for episode in range(self.max_episodes):
-            is_dome = False
+            is_done = False
             self.env.reset()
             reward_sum = 0.0
             steps = 0
